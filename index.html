@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #progress
+    {
+      background-color: navy;
+      height:30px;
+      width: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>using js</h1>
+  <div id="progress"></div>
+  <script src="first.js"></script>
+
+  <script> 
+  let style =  document.getElementById("progress").style;
+  //  Module.env.func1 = function(log) { console.log(log)}
+  //  setTimeout(()=>{ for(let i=0;i<100;i++)
+  //   {
+  //     style.width = `${i}vw`;
+  //   }},3000);
+   function func1(d)
+   {
+    style.width = `${d*100}vw`;
+    // style.rotate = `${d*3.6*100}deg`
+    console.log("hello world")
+    console.log(d*100);
+   }
+   Module.onRuntimeInitialized = function()
+   {
+      
+    
+      Module._test();
+      
+   }
+  </script>
+</body>
+</html>
